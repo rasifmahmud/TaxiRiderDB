@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="taxirider.ShowTourPaymentController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="59.0" prefWidth="1366.0" VBox.vgrow="ALWAYS">
+         <children>
+            <Label text="AVAILABLE DRIVERS LIST">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox prefHeight="642.0" prefWidth="1366.0" VBox.vgrow="ALWAYS">
+         <children>
+            <TableView fx:id="STPTable" prefHeight="640.0" prefWidth="1301.0">
+              <columns>
+                <TableColumn fx:id="STPTourIDTc" prefWidth="193.0" text="TOUR ID" />
+                <TableColumn fx:id="STPUserIDTc" prefWidth="258.0" text="USER ID" />
+                  <TableColumn fx:id="STPGenCodeTc" minWidth="0.0" prefWidth="443.0" text="GENERATED CODE" />
+                  <TableColumn fx:id="STPPaymentTypeTc" prefWidth="201.0" text="PAYMENT TYPE" />
+                  <TableColumn fx:id="STPAmountTc" prefWidth="205.0" text="AMOUNT" />
+              </columns>
+            </TableView>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_RIGHT" prefHeight="73.0" prefWidth="1366.0" VBox.vgrow="ALWAYS">
+         <children>
+            <Button fx:id="STPBackButt" mnemonicParsing="false" onAction="#STPBackButtClick" style="-fx-background-color: #252AC2;" text="BACK" textFill="WHITE">
+               <effect>
+                  <Reflection />
+               </effect>
+            </Button>
+         </children>
+         <padding>
+            <Insets right="15.0" />
+         </padding></HBox>
+   </children>
+</VBox>
